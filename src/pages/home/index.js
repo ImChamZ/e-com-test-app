@@ -16,6 +16,7 @@ const HomePage = ({ cart }) => {
       <div class="card-body">
         <div className="row">
           <div className="col-2">
+            <h4>Sizes:</h4>
             <SizeFilter onSizeButtonClicked={handleSizeClick}></SizeFilter>
           </div>
           <div className="col-9">
@@ -30,10 +31,10 @@ const HomePage = ({ cart }) => {
               <button
                 onClick={() => setToggleShowCart(true)}
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-primary cart-btn"
               >
-                Cart{" "}
-                <span class="badge badge-light">
+                <i class="fa fa-shopping-cart fa-7x"></i>
+                <span class="badge badge-light item-count-batch">
                   {Object.keys(itemList).length}
                 </span>
                 <span class="sr-only"></span>

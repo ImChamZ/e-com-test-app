@@ -8,6 +8,9 @@ const CartDetailView = ({ closePopup, cart }) => {
       <button className="btn btn-dark popup-close-btn" onClick={closePopup}>
         X
       </button>
+      <div className="row">
+        <i class="fa fa-shopping-cart fa-7x"></i>
+      </div>
       <div className="container detail-item-container">
         {cartItemList.map((item) => {
           return (

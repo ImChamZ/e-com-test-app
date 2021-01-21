@@ -53,7 +53,7 @@ body {
 }
 .popup-close-btn {
   position: absolute;
-  margin-left: -52px;
+  margin-left: -50px;
   border-radius: unset;
 }
 .product-image-sm {
@@ -71,4 +71,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cart-btn {
+  width: 100px;
+  height: 50px;
+}
+.item-count-batch {
+  color: #212529;
+  background-color: #b79d21;
+  position: absolute !important;
+  top: 30px !important;
+  border-radius: 50%;
 }
