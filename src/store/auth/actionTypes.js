@@ -1,5 +1,0 @@
-// login
-export const authActions = {
-  USER_LOGIN_SUCCESS: 'USER_LOGIN_SUCCESS',
-  USER_LOGOUT_SUCCESS: 'USER_LOGOUT_SUCCESS',
-};

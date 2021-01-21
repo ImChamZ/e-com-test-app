@@ -2,7 +2,7 @@ import React from "react";
 import Routes from "./routes";
 
 const App = () => (
-  <div className="container-lg">
+  <div className="container-fluid">
     <Routes />
   </div>
 );

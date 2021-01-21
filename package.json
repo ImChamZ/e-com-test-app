@@ -1,7 +1,7 @@
 {
-  "name": "search-app",
+  "name": "e-com-app",
   "version": "1.0.0",
-  "description": "Search app using nodejs, express, react, webpack, babel, redux and material",
+  "description": "E-com using react, webpack, babel, redux and bootstrap",
   "main": "index.js",
   "author": "Chamara Chathuranga",
   "license": "ISC",
@@ -16,15 +16,11 @@
     "setup": "npm install & npm run dev"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
-    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
     "react-google-login": "^5.1.22",
     "react-redux": "^7.2.2",
     "react-router": "^5.2.0",

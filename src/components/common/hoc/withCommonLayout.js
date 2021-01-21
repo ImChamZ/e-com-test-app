@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
 
-const withCommonHeader = (HocComponent) => {
+/**
+ * Can be use to display a component with the basic layout
+ * @param {Component} HocComponent component to load inside the main container
+ */
+const withCommonLayout = (HocComponent) => {
   return class extends Component {
     render() {
       return (
@@ -18,4 +22,4 @@ const withCommonHeader = (HocComponent) => {
   };
 };
 
-export default withCommonHeader;
+export default withCommonLayout;
