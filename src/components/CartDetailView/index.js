@@ -9,13 +9,13 @@ const CartDetailView = ({ closePopup, cart }) => {
         X
       </button>
       <div className="row">
-        <i class="fa fa-shopping-cart fa-7x"></i>
+        <i className="fa fa-shopping-cart fa-7x"></i>
       </div>
       <div className="container detail-item-container">
-        {cartItemList.map((item) => {
+        {cartItemList.map((item, index) => {
           return (
-            <div class="card card mb-2">
-              <div class="card-body">
+            <div key={index} className="card card mb-2">
+              <div className="card-body">
                 <div className="row">
                   <div className="col-3">
                     <img
@@ -36,7 +36,7 @@ const CartDetailView = ({ closePopup, cart }) => {
           );
         })}
         {cartItemList.length > 0 && (
-          <button class="btn btn-light full-width">Checkout</button>
+          <button className="btn btn-light full-width">Checkout</button>
         )}
       </div>
     </div>

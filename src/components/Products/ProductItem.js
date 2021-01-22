@@ -9,22 +9,22 @@ const ProductItem = ({ product, cart }) => {
   const { itemList } = cart;
 
   return (
-    <div class="card product-card">
+    <div className="card product-card">
       <div className="image-container">
         <img
-          class="card-img-top product-image"
+          className="card-img-top product-image"
           src={image}
           alt="Card image cap"
         />
       </div>
-      <label class="card-title">{name}</label>
-      <div class="">
-        <hr></hr>
+      <label className="card-title">{name}</label>
+      <div className="product-card-footer">
+        <hr className="product-card-hr" />
         <label>$ {price}</label>
         <div>
           {itemList.hasOwnProperty(id) ? (
             <button
-              class="btn btn-success"
+              className="btn btn-success"
               onClick={() => {
                 dispatch(removeFromCart(product));
               }}
@@ -33,7 +33,7 @@ const ProductItem = ({ product, cart }) => {
             </button>
           ) : (
             <button
-              class="btn btn-dark"
+              className="btn btn-dark"
               onClick={() => {
                 dispatch(addToCart(product));
               }}

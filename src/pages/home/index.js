@@ -12,36 +12,34 @@ const HomePage = ({ cart }) => {
   };
 
   return (
-    <div class="">
-      <div class="card-body">
-        <div className="row">
-          <div className="col-2">
-            <h4>Sizes:</h4>
-            <SizeFilter onSizeButtonClicked={handleSizeClick}></SizeFilter>
-          </div>
-          <div className="col-9">
-            <Products></Products>
-          </div>
-          {showCart ? (
-            <CartDetailViewContainer
-              closePopup={() => setToggleShowCart(false)}
-            ></CartDetailViewContainer>
-          ) : (
-            <div className="col-1">
-              <button
-                onClick={() => setToggleShowCart(true)}
-                type="button"
-                class="btn btn-primary cart-btn"
-              >
-                <i class="fa fa-shopping-cart fa-7x"></i>
-                <span class="badge badge-light item-count-batch">
-                  {Object.keys(itemList).length}
-                </span>
-                <span class="sr-only"></span>
-              </button>
-            </div>
-          )}
+    <div className="card-body p-0">
+      <div className="row">
+        <div className="col-2 mt-5">
+          <h4>Sizes:</h4>
+          <SizeFilter onSizeButtonClicked={handleSizeClick}></SizeFilter>
         </div>
+        <div className="col-9 mt-5">
+          <Products></Products>
+        </div>
+        {showCart ? (
+          <CartDetailViewContainer
+            closePopup={() => setToggleShowCart(false)}
+          ></CartDetailViewContainer>
+        ) : (
+          <div className="col-1">
+            <button
+              onClick={() => setToggleShowCart(true)}
+              type="button"
+              className="btn btn-dark cart-btn"
+            >
+              <i className="fa fa-shopping-cart cart-lg"></i>
+              <span className="badge badge-light item-count-batch">
+                {Object.keys(itemList).length}
+              </span>
+              <span className="sr-only"></span>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

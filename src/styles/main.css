@@ -21,14 +21,24 @@ body {
 }
 
 .product-card {
-  width: 300px;
+  width: 250px;
   height: 500px;
   display: flex;
   padding: 10px;
   margin: 10px;
-  justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.product-card-footer {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 10px;
+}
+.product-card-hr {
+  width: 25px;
+  background: orange;
+  height: 2px;
 }
 
 .image-container {
@@ -73,7 +83,7 @@ body {
   align-items: center;
 }
 .cart-btn {
-  width: 100px;
+  width: 75px;
   height: 50px;
 }
 .item-count-batch {
@@ -82,4 +92,8 @@ body {
   position: absolute !important;
   top: 30px !important;
   border-radius: 50%;
+}
+
+.cart-lg {
+  font-size: 35px !important;
 }
